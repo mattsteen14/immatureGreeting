@@ -4,25 +4,22 @@ const generateRandomNumber = num => {
 }
 
 const immatureChoices = {
-    greetings: ['Hello', 'Hi', 'Oi', 'You there', 'Alright', 'Come here', 'Go away', 'Hiya'],
-    mPronouns: ['Mister', 'Master', 'King', 'Prince'],
-    fPronouns: ['Mrs', 'Miss', 'Queen', 'Princess'],
+    greetings: ['Hello', 'Hi', 'Oi', 'You there', 'Alright', 'Come here', 'Go away', 'Hiya', 'Oh, it\'s you again'],
+    mPronouns: ['Mister', 'Master', 'King', 'Prince', 'boy'],
+    fPronouns: ['Mrs', 'Miss', 'Queen', 'Princess', 'Ms', 'girly'],
     pronouns: ['you', 'Doctor', 'Professor', 'Captain', 'President', 'General'],
-    adjectives: ['smelly', 'stinky', 'ugly', 'poo poo', 'bum', 'bum bum', 'crazy', 'stupid', 'disgusting', 'fart', 'farty', 'silly'],
-    // mNouns: ['man', 'boy'],
-    // fNouns: ['woman', 'girl'],
-    nouns: ['head', 'monkey', 'face', 'bum', 'legs', 'idiot', 'alien', 'monster'],
+    adjectives: ['smelly', 'stinky', 'ugly', 'poo poo', 'bum', 'bum bum', 'crazy', 'stupid', 'disgusting', 'fart', 'farty', 'silly', 'sweaty', 'slippery'],
+    nouns: ['head', 'monkey', 'face', 'bum', 'legs', 'idiot', 'alien', 'monster', 'sausage', 'nugget', 'pants'],
 }
 
 let neutralGreeting = [];
-
 for (let prop in immatureChoices) {
     let optionIdx = generateRandomNumber(immatureChoices[prop].length)
 
     // use the object's properties to customize the message being added to maleGreeting  
     switch (prop) {
         case 'greetings':
-            neutralGreeting.push(`Need an immature greeting for your child at school pick up? How about... \n"${immatureChoices[prop][optionIdx]}`)
+            neutralGreeting.push(`Need an immature greeting for your child at school pick up? How about... \n"${immatureChoices[prop][optionIdx]},`)
             break
         case 'mPronouns':
             break
@@ -43,14 +40,13 @@ for (let prop in immatureChoices) {
 }
 
 let maleGreeting = [];
-
 for (let prop in immatureChoices) {
     let optionIdx = generateRandomNumber(immatureChoices[prop].length)
 
     // use the object's properties to customize the message being added to maleGreeting  
     switch (prop) {
         case 'greetings':
-            maleGreeting.push(`Need an immature greeting for your son at school pick up? How about... \n"${immatureChoices[prop][optionIdx]}`)
+            maleGreeting.push(`Need an immature greeting for your son at school pick up? How about... \n"${immatureChoices[prop][optionIdx]},`)
             break
         case 'mPronouns':
             maleGreeting.push(`${immatureChoices[prop][optionIdx]}`)
@@ -71,14 +67,13 @@ for (let prop in immatureChoices) {
 }
 
 let femaleGreeting = [];
-
 for (let prop in immatureChoices) {
     let optionIdx = generateRandomNumber(immatureChoices[prop].length)
 
     // use the object's properties to customize the message being added to maleGreeting  
     switch (prop) {
         case 'greetings':
-            femaleGreeting.push(`Need an immature greeting for your daughter at school pick up? How about... \n"${immatureChoices[prop][optionIdx]}`)
+            femaleGreeting.push(`Need an immature greeting for your daughter at school pick up? How about... \n"${immatureChoices[prop][optionIdx]},`)
             break
         case 'mPronouns':
             break
