@@ -5,10 +5,10 @@ const generateRandomNumber = num => {
 
 // Arrays stored in object.
 const immatureChoices = {
-    greetings: ['Hello', 'Hi', 'Oi', 'You there', 'Alright', 'Come here', 'Go away', 'Hiya', 'Oh, it\'s you again'],
-    mPronouns: ['Mister', 'Master', 'King', 'Prince', 'boy', 'Sir', 'little boy', 'senor'],
-    fPronouns: ['Mrs', 'Miss', 'Queen', 'Princess', 'Ms', 'girly', 'senora', 'senorita', 'little miss'],
-    pronouns: ['you', 'Doctor', 'Professor', 'Captain', 'President', 'General'],
+    greetings: ['Hello', 'Hi', 'Oi', 'You there', 'Alright', 'Come here', 'Go away', 'Hiya', 'Oh, it\'s you again', 'Hey'],
+    mPronouns: ['Mister', 'Master', 'King', 'Prince', 'boy', 'Sir', 'little boy', 'Senor', 'Monsieur'],
+    fPronouns: ['Mrs', 'Miss', 'Queen', 'Princess', 'Ms', 'girly', 'Senora', 'Senorita', 'little miss', 'Mademoiselle'],
+    pronouns: ['you', 'Doctor', 'Professor', 'Captain', 'President', 'General', 'Director'],
     adjectives: ['smelly', 'stinky', 'ugly', 'poo poo', 'bum', 'bum bum', 'crazy', 'stupid', 'disgusting', 'fart', 'farty', 'silly', 'sweaty', 'slippery'],
     nouns: ['head', 'monkey', 'face', 'bum', 'legs', 'idiot', 'alien', 'monster', 'sausage', 'nugget', 'pants'],
 }
